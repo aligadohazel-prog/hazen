@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hazel Aligado's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --accent:#22c55e;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+
+    html{scroll-behavior:smooth;}
+
+    body{background:var(--bg);color:var(--text);}
+
+    .container{max-width:1100px;margin:auto;padding:30px;}
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:40px;
+    }
+
+    header h1{font-size:28px;}
+
+    nav a{
+      margin-left:20px;
+      text-decoration:none;
+      color:var(--text);
+      font-size:14px;
+      padding:0;
+      border:none;
+      border-radius:0;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:var(--accent);
+      box-shadow:none;
+      background:none;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+      margin-bottom:60px;
+    }
+
+    .hero-text h2{
+      font-size:36px;
+      margin-bottom:10px;
+      border-right:3px solid var(--accent);
+      width:fit-content;
+      white-space:nowrap;
+      overflow:hidden;
+      animation: typing 3s steps(20), blink 0.6s infinite alternate;
+    }
+
+    @keyframes typing{
+      from{width:0}
+      to{width:100%}
+    }
+
+    @keyframes blink{
+      from{border-color:transparent}
+      to{border-color:var(--accent)}
+    }
+
+    .hero-text span{color:var(--accent);}
+
+    .hero-text p{color:var(--muted);margin-top:10px;}
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:0;
+      background:none;
+      color:var(--accent);
+      border-radius:0;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      text-decoration:underline;
+      box-shadow:none;
+      transform:none;
+    }
+
+    .profile-img{
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid var(--accent);
+      display:block;
+      margin:auto;
+      box-shadow:0 0 15px var(--accent);
+    }
+
+    section{margin-bottom:50px;}
+
+    h3{margin-bottom:20px;border-left:4px solid var(--accent);padding-left:10px;}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:var(--card);
+      padding:25px;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 15px rgba(34,197,94,0.3);
+    }
+
+    .card p{color:var(--muted);font-size:14px;margin-top:5px;}
+
+    footer{
+      text-align:center;
+      margin-top:40px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+      .hero{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <h1>H.A</h1>
+  
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hi, I'm <span>Hazel Aligado</span></h2>
+    <p>Aspiring Web Developer passionate about building clean and simple websites.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+
+  <div>
+<img src="IMG_20260402_231035_944.jpg" class="profile-img">
+  </div>
+</section>
+
+<section id="about">
+  <h3>About Me</h3>
+  <p>I've just finished senior high school at Moreh Academy, and I'm eager to get started on my career path. I'm excited to learn and contribute, and I'm ready to embrace new challenges as I begin my career journey.</p>
+</section>
+
+<section id="skills">
+  <h3>Skills</h3>
+  <div class="grid">
+    <div class="card">Basic HTML and CSS coding</div>
+    <div class="card">Basic Video Editing</div>
+    <div class="card">Cooking</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Portfolio Website</h4>
+      <p>A personal portfolio built using HTML & CSS.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <p>Email: aligadohazel03@gmail.com</p>
+  <p>Phone: 09120118501</p>
+</section>
+
+<footer>
+  <p>© 2026 Hazel Aligado | Personal Portfolio</p>
+</footer>
+
+</div>
+
+</body>
+</html>
